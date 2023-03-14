@@ -1,0 +1,35 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.board {
+  display: flex;
+  justify-content: center;
+}
+#gamecontainer {
+  width: 25rem;
+  height: 25rem;
+  border: 10px black solid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#gamecontainer > div {
+  background-color: white;
+  border: 2px black solid;
+  font-size: 5rem;
+  text-align: center;
+}
+#players {
+  display: flex;
+  justify-content: center;
+  font-size: 10rem;
+}
+.active {
+  font-weight: bold;
+}
+
+.winner {
+  display: flex;
+  justify-content: center;
+}
